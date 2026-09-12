@@ -1,0 +1,32 @@
+from tkinter import*
+root=Tk()
+root.title("menu bar")
+#creating menu bar
+menubar=Menu(root)
+
+#adding file menu
+file=Menu(menubar)
+menubar.add_cascade(label="file",menu=file)
+file.add_command(label="New file",command=None)
+file.add_command(label="Add file",command=None)
+file.add_command(label="Save",command=None)
+file.add_command(label="Save As",command=None)
+file.add_command(label="Exit",command=root.destroy)
+
+
+
+#adding edit
+
+
+edit=Menu(menubar)
+menubar.add_cascade(label="edit",menu=edit)
+edit.add_command(label="Cut",command=None)
+edit.add_command(label="Copy",command=None)
+edit.add_command(label="Paste",command=None)
+edit.add_command(label="Select All",command=None)
+edit.add_command(label="Find",command=None)
+edit.add_command(label="Replace",command=None)
+
+root.config(menu=menubar)
+root.mainloop()
+
